@@ -1,0 +1,110 @@
+<ion-header [translucent]="true">
+  <div class="icon">
+    <img src="assets\icon\icon1.png" width="550">
+  </div>
+   <ion-toolbar>
+     <ion-title>Client
+     </ion-title>
+     
+     <br>
+   </ion-toolbar>
+ </ion-header>
+   <ion-header>
+   <ion-list>
+      <ion-label>Create Appointment</ion-label>
+      <br>
+  
+       <ion-button id="left-start" color="dark" >Appointment</ion-button>
+       <ion-popover trigger="left-start" side="top" alignment="center">
+         <ng-template>
+          <br>
+           <ion-content class="ion-padding"><ion-label>CREATE APPOINTMENT</ion-label>
+            <ion-item>
+              <ion-input label="Name: "></ion-input>
+              </ion-item>
+              <ion-item>
+              <ion-input label="Therapi: "></ion-input>
+              </ion-item>
+              <ion-input label="Contact No.: "></ion-input>
+              <ion-item>
+              <ion-input label="Address: "></ion-input>
+               </ion-item>
+               <ion-button>Save</ion-button>
+            </ion-content>
+         </ng-template>
+       </ion-popover>
+
+   </ion-list>
+   </ion-header>
+   
+   <ion-content [fullscreen]="true">
+     <ion-header collapse="condense">
+       <ion-toolbar>
+         <ion-title size="large">View Appointment</ion-title>
+       </ion-toolbar>
+     </ion-header>
+
+   <ion-content>
+   <ion-card>
+    
+      <ion-button id="top-center" color="success" fill="clear">Appointment 1</ion-button>
+      <ion-popover trigger="top-center" side="top" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding"><strong> APPOINTMENT No. 1</strong>
+            <p>Name: Ms. Lovely Rose Hernandez</p>
+            <p>Day: Monday</p>
+            <p>Time: 8:00 AM</p>
+            <p>Home Service</p></ion-content>
+        </ng-template>
+      </ion-popover>
+      <ion-button><ion-select label="Feedback" placeholder="Rate">
+        <ion-select-option value="1s">1 Star</ion-select-option>
+        <ion-select-option value="2s">2 Star</ion-select-option>
+        <ion-select-option value="3s">3 Star</ion-select-option>
+        <ion-select-option value="4s">4 Star</ion-select-option>
+        <ion-select-option value="5s">5 Star</ion-select-option>
+      </ion-select>
+      </ion-button>
+      <br>
+      
+   <ion-button id="trigger-button" color="success" fill="clear">Appointment 2</ion-button>
+   <ion-popover trigger="trigger-button">
+     <ng-template>
+      <ion-content class="ion-padding">
+      <strong> APPOINTMENT No. 2</strong>
+        <p>Name: Ms. Lovely Rose Hernandez</p>
+        <p>Day: Monday</p>
+        <p>Time: 10:00 AM</p>
+        <p>Home Service</p>
+       </ion-content>
+     </ng-template>
+   </ion-popover> 
+   <ion-button><ion-select label="Feedback" placeholder="Rate">
+    <ion-select-option value="1s">1 Star</ion-select-option>
+    <ion-select-option value="2s">2 Star</ion-select-option>
+    <ion-select-option value="3s">3 Star</ion-select-option>
+    <ion-select-option value="4s">4 Star</ion-select-option>
+    <ion-select-option value="5s">5 Star</ion-select-option>
+  </ion-select>
+  </ion-button>
+   <br>
+
+   <ion-button id="bottom-start" color="success" fill="clear">Appointment 3</ion-button>
+  <ion-popover trigger="bottom-start" side="bottom" alignment="start">
+    <ng-template>
+      <ion-content class="ion-padding">No Appointment</ion-content>
+    </ng-template>
+  </ion-popover>
+  <ion-button><ion-select label="Feedback" placeholder="Rate">
+    <ion-select-option value="1s">1 Star</ion-select-option>
+    <ion-select-option value="2s">2 Star</ion-select-option>
+    <ion-select-option value="3s">3 Star</ion-select-option>
+    <ion-select-option value="4s">4 Star</ion-select-option>
+    <ion-select-option value="5s">5 Star</ion-select-option>
+  </ion-select>
+  </ion-button>
+   <br>
+   <ion-button href="/login" size="medium" >Logout</ion-button>
+   </ion-card>
+   </ion-content>
+   

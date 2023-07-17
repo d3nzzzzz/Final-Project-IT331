@@ -1,0 +1,7 @@
+{
+  "name": "Fproj",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

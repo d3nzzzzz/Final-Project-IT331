@@ -1,0 +1,71 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button>Profile</ion-button>
+      <ion-button>Change Password</ion-button>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <ion-label>
+        Twitter Account: Therapist
+      </ion-label>
+      <br>
+      <ion-label>
+        Facebook Account: Therapist
+      </ion-label>
+      <br>
+      <ion-label>
+        Instagram Account: Therapist
+      </ion-label>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">  </ion-content>
+  </div>
+
+  <div id="container">
+   
+      <div class="icon">
+        <img src="assets\icon\icon1.png" width="550">
+      </div>
+
+    <p></p>
+    <ion-button color="light" ><a href = "/client">CLient</a></ion-button>
+    <hr>
+    <ion-button color="light" ><a href = "/therapist">Therapist</a></ion-button>
+    <hr>
+    <ion-button id="trigger-button">About us</ion-button>
+    <ion-popover trigger="trigger-button">
+      <ng-template>
+       <ion-content class="ion-padding">
+       <strong> MAssage Application</strong>
+         <p>It is a application we're you can add schedule</p>
+         <p>Email: therapist@gmail.com</p>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+  </div>
+  
+</ion-content>
+<ion-button color="light" ><a href = "/login">Logout</a></ion-button>
+
